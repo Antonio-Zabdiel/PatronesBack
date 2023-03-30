@@ -38,8 +38,8 @@ app.get("/", async (req, res, next) => {
     res.json({msg:"welcome :3"});});
 
 app.get("/get", async (req, res, next) => {
-    console.log(dataBase[req.params.id])
-    res.json({msg: dataBase[req.params.id]});});
+    console.log(dataBase[req.query.id])
+    res.json({msg: dataBase[req.query.id]});});
 
 app.get("/getall", async (req, res, next) => {
     console.log(dataBase)
