@@ -35,15 +35,18 @@ app.all("/", function (req, res, next) {
 
 //test
 app.get("/", (req, res, next) => {
-    res.json({msg:"welcome :3"});});
+    res.json({msg:"welcome :3"});
+});
 
 app.get("/get", (req, res, next) => {
     console.log(dataBase[req.query.id])
-    res.json({msg: dataBase[req.query.id]});});
+    res.json({msg: dataBase[req.query.id]});
+});
 
 app.get("/getall", (req, res, next) => {
     console.log(dataBase)
-    res.json({msg: dataBase});});
+    res.json({msg: dataBase});
+});
 
 //run this sheet
 app.listen(PORT, () => {
