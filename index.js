@@ -4,7 +4,7 @@ var app = express();
 
 const PORT = process.env.PORT;
 
-const dataBase ={
+var dataBase ={
     1: {nombre: 'juan', 
         instrumento: 'guitarra'},
     2: {nombre: 'chimoltrufia',
