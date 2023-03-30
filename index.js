@@ -38,7 +38,12 @@ app.get("/", async (req, res, next) => {
     res.json({msg:"welcome :3"});});
 
 app.get("/get", async (req, res, next) => {
+    console.log(dataBase[req.params.id])
     res.json({msg: dataBase[req.params.id]});});
+
+pp.getAll("/get", async (req, res, next) => {
+    console.log(dataBase)
+    res.json({msg: dataBase});});
 
 //run this sheet
 app.listen(PORT, () => {
