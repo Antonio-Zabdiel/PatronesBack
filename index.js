@@ -41,7 +41,7 @@ app.get("/get", async (req, res, next) => {
     console.log(dataBase[req.params.id])
     res.json({msg: dataBase[req.params.id]});});
 
-pp.getAll("/get", async (req, res, next) => {
+pp.getAll("/getall", async (req, res, next) => {
     console.log(dataBase)
     res.json({msg: dataBase});});
 
