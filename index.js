@@ -34,14 +34,14 @@ app.all("/", function (req, res, next) {
 //end of global
 
 //test
-app.get("/", async (req, res, next) => {
+app.get("/", (req, res, next) => {
     res.json({msg:"welcome :3"});});
 
-app.get("/get", async (req, res, next) => {
+app.get("/get", (req, res, next) => {
     console.log(dataBase[req.query.id])
     res.json({msg: dataBase[req.query.id]});});
 
-app.get("/getall", async (req, res, next) => {
+app.get("/getall", (req, res, next) => {
     console.log(dataBase)
     res.json({msg: dataBase});});
 
