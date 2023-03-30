@@ -4,6 +4,16 @@ var app = express();
 
 const PORT = process.env.PORT;
 
+//protocolos de transferencia de datos estandar
+const cors=require("cors");
+const corsOptions ={
+   origin:'*', 
+   credentials:true,            
+   optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions))
+
 var dataBase ={
     1: {nombre: 'juan', 
         instrumento: 'guitarra'},
